@@ -65,5 +65,5 @@ crashlytics-build.properties
     trustExitCode = false
     keepTemporaries = true
     keepBackup = false
-    path = 'C:\Program Files\Unity\Hub\Editor\2019.3.9f1\Editor\Data\Tools'
-    cmd = 'C:\Program Files\Unity\Hub\Editor\2019.3.9f1\Editor\Data\Tools' merge -p "$BASE" "$REMOTE" "$LOCAL" "$MERGED"
+    path = 'C:\Program Files\Unity\Hub\Editor\2019.3.9f1\Editor\Data\Tools\UnityYAMLMerge.exe'
+    cmd = 'C:\Program Files\Unity\Hub\Editor\2019.3.9f1\Editor\Data\Tools\UnityYAMLMerge.exe' merge -p "$BASE" "$REMOTE" "$LOCAL" "$MERGED"
