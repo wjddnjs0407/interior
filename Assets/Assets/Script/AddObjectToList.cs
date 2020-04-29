@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class AddObjectToList : MonoBehaviour
 {
@@ -17,6 +18,14 @@ public class AddObjectToList : MonoBehaviour
 		copy.transform.parent = content.transform;
 		
 		copy.GetComponentInChildren<Text>().text = "Project" + (index+1).ToString();
+		
+		copy.GetComponent<Button>().onClick.AddListener(
+			() => 
+			{
+				SceneManager.LoadScene(1);
+			}
+		);
+		
 		index++;
 	}
 }
